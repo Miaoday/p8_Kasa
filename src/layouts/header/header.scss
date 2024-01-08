@@ -1,8 +1,32 @@
-.header_logo {
+.header{
     display: flex;
-    flex-direction: row;
 }
 
-.header_nav ul li {
-    list-style: none;
+.header_logo {
+    display: flex;
 }
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    ul{
+      width: 190px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0;
+      padding: 15px;   
+    }
+
+    ul>li {
+      list-style: none;
+      text-decoration-line:underline;
+      color: #FF6060;
+      text-align: right;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 142.6%; /* 17.112px */      
+    }
+}
+
