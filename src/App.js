@@ -7,7 +7,7 @@ import Home from './pages/home/Home.jsx';
 function App() {
   return (
       <Router>
-        <div>
+        <div className='main_container'>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
