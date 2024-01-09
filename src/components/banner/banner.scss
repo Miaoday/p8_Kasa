@@ -1,0 +1,10 @@
+.banner {
+  width: 335px;
+  height: 111px;
+  background: #000;
+
+  &_img {
+    border-radius: 10px;
+    opacity: 0.3;
+  }
+}

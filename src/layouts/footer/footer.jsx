@@ -1,10 +1,10 @@
-import Logo_footer from '../../assets/images/mobile_Footer.png';
+import LogoFooter from '../../assets/images/footer_mobile.png';
 import './footer.scss';
 
 function Footer () {
   return(
     <footer>
-    <img src={Logo_footer} alt='logo-of-footer-mobile'/>
+    <img src={LogoFooter} alt='logo-of-footer-mobile'/>
     </footer>
   )
 }
