@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import './banner.scss';
 
 function Banner ({banner, text}) {
+  
   return (
     <div className='banner'>
       <img className='banner_img' src={banner} alt='banner-img-mobile-version'/>
