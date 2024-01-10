@@ -1,10 +1,15 @@
 .banner {
-  width: 335px;
-  height: 111px;
-  background: #000;
+  position: relative;
+  right: 355px;
+  
 
   &_img {
     border-radius: 10px;
     opacity: 0.3;
+    width: 335px;
+    height: 111px;
+  
+    background-color: #000;
+    mix-blend-mode: darken;
   }
 }

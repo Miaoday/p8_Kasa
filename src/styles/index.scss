@@ -1,4 +1,6 @@
 @import '../layouts/header/header.scss';
+@import '../layouts/footer/footer.scss';
+@import '../components/banner/banner.scss';
 
 * {
     
@@ -11,10 +13,12 @@
 
 body {
   padding: 20px;
+  
 }
 
 .main_container {
   display: flex;
+  min-width: 375px;
 }
 
 li {

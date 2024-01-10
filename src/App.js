@@ -6,7 +6,7 @@ import Footer from './layouts/footer/Footer.jsx';
 
 import Home from './pages/home/Home.jsx';
 // import About from './pages/about/About.jsx';
-// import Error from './pages/error/Error.jsx';
+import Error from './pages/error/Error.jsx';
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
         <div className='main_container'>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/p8_kasa" element={<Home />} />
             {/* <Route path="/about" element={<About />} /> */}
-            {/* <Route path="*" element={<Error />} /> */}
+            <Route path="*" element={<Error />} />
           </Routes>      
         </div>
         <div />

@@ -5,9 +5,9 @@ import bannerHome from "../../assets/images/banner_home.png";
 
 function Home () {
   return(
-    <div>
+    <section >
     <Banner banner={bannerHome} text='Chez vous, partout et ailleurs' />
-    </div>
+    </section>
   )
 }
 
