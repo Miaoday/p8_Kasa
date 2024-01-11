@@ -14,6 +14,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/p8_kasa" element={<Home />} />
+            
             {/* <Route path="/about" element={<About />} /> */}
             <Route path="*" element={<Error />} />
           </Routes>      

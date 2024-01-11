@@ -1,12 +1,11 @@
 import React from "react";
 import '../card/card.scss';
 import { Link } from 'react-router-dom';
-import data from '../data/appartements.json';
 
 function Card ({id, cover, title}) {
 
   return(
-  <Link to={`/appartements.json/${id}`} >
+  <Link to={`/appartements/${id}`} >
   
     <div className="card">
     <img src={cover} alt={title}/>
@@ -14,7 +13,6 @@ function Card ({id, cover, title}) {
     </div>
   </Link>
   )
-
 }
 
 export default Card
