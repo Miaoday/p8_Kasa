@@ -1,15 +1,20 @@
 .banner {
   position: relative;
-  right: 355px;
-  
 
   &_img {
     border-radius: 10px;
-    opacity: 0.3;
-    width: 335px;
+    width: 89.4%;
     height: 111px;
-  
-    background-color: #000;
-    mix-blend-mode: darken;
+    object-fit: cover; 
+    filter: brightness(0.6);
+  }
+
+  &_text {
+    color: #FFF;
+    width: 58%;
+    line-height: 100%; /* 24px */
+    position: absolute;
+    top: 31px;
+    left: 16px;
   }
 }

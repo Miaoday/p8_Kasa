@@ -3,7 +3,7 @@ import './footer.scss';
 
 function Footer () {
   return(
-    <footer >
+    <footer>
     <img src={LogoFooter} alt='logo-of-footer-mobile'/>
     </footer>
   )

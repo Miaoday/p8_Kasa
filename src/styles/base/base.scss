@@ -1,0 +1,25 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
+.main_container {
+  display: flex;
+  min-width: 375px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 20px;
+}
+
+li {
+  list-style: none;
+}
+

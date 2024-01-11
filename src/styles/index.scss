@@ -1,26 +1,6 @@
+@import '../styles/base/base.scss';
 @import '../layouts/header/header.scss';
 @import '../layouts/footer/footer.scss';
 @import '../components/banner/banner.scss';
-
-* {
-    
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat';
-  font-style: normal;
-}
-
-body {
-  padding: 20px;
-  
-}
-
-.main_container {
-  display: flex;
-  min-width: 375px;
-}
-
-li {
-  list-style: none;
-}
+@import '../components/cards/card.scss';
+@import '../components/collection/collection.scss';
