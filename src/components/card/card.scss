@@ -1,5 +1,22 @@
 .card {
-    width: 335px;
-    height: 255px;
-    border-radius: 10px;
+    min-width: 335px;
+    height: 255px;  
+    margin: 20px 0;
+    cursor: pointer;
+
+    &_img {
+      width: 89.4%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      position: relative;
+    }
+
+    &_txt {
+      position: absolute;
+
+
+
+    }
+
 }

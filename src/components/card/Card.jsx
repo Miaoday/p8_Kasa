@@ -3,13 +3,13 @@ import '../card/card.scss';
 import { Link } from 'react-router-dom';
 
 function Card ({id, cover, title}) {
-
+  console.log(id,cover,title);
   return(
   <Link to={`/appartements/${id}`} >
   
     <div className="card">
-    <img src={cover} alt={title}/>
-    <h3>{title}</h3>
+    <img src={cover} alt='cover-of-appartement' className="card_img"/>
+    <h3 className="card_txt">{title}</h3>
     </div>
   </Link>
   )
