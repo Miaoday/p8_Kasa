@@ -1,7 +1,9 @@
 .card {
     min-width: 335px;
     height: 255px;  
-    margin: 20px 0;
+    margin: 22px 0;
+    display: grid;
+    align-items: end;
     cursor: pointer;
 
     &_img {
@@ -14,9 +16,11 @@
 
     &_txt {
       position: absolute;
-
-
-
+      margin: 200px 30px 15px;
+      color: #FFF;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 142.6%; /* 25.668px */
     }
 
 }
