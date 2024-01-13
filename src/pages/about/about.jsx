@@ -6,10 +6,8 @@ import bannerAbout from "../../assets/images/banner_about.png"
 function About () {
   return(
     <div>
-        
         <Banner banner={bannerAbout} />
-        <h1>A Propos</h1>
-        
+        <h3>Fiabilité</h3>        
     </div>
   )
 }
