@@ -9,10 +9,12 @@ function Header () {
          <img src={Logo} alt="logo-for-mobile-version" />         
             <ul>
                <li> 
-                  <Link to="/" /> Accueil
+                  <Link to="/"> Accueil 
+                  </Link>
                </li>
                <li>
-                  <Link to="about"/> A Propos
+                  <Link to="about"> A Propos
+                  </Link>
                </li>
             </ul>
          </nav>
