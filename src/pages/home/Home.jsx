@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../../components/banner/Banner.jsx";
+import Banner from "../../components/banner/Bannerr.jsx";
 import bannerHome from "../../assets/images/banner_home.png";
 import Collection from "../../components/collection/Collection.jsx";
 

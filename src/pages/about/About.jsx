@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../../components/banner/Banner";
+import Banner from "../../components/banner/Bannerr";
 import './about.scss';
 import bannerAbout from "../../assets/images/banner_about.png"
 
