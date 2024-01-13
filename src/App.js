@@ -5,7 +5,7 @@ import Header from './layouts/header/Header.jsx';
 import Footer from './layouts/footer/Footer.jsx';
 import Home from './pages/home/Home.jsx';
 import About from './pages/about/About.jsx';
-import Error from './pages/error/Errorr.jsx';
+import Error from './pages/error/Error.jsx';
 
 function App() {
   return (
