@@ -4,8 +4,8 @@ import './styles/index.scss';
 import Header from './layouts/header/Header.jsx';
 import Footer from './layouts/footer/Footer.jsx';
 import Home from './pages/home/Home.jsx';
-import About from './pages/about/Aboutt.jsx';
-import Error from './pages/error/Error.jsx';
+import About from './pages/about/About.jsx';
+import Error from './pages/error/Errorr.jsx';
 
 function App() {
   return (
