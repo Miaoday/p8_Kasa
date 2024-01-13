@@ -13,7 +13,7 @@ function Header () {
                   </Link>
                </li>
                <li>
-                  <Link to="about"> A Propos
+                  <Link to="About"> A Propos
                   </Link>
                </li>
             </ul>
