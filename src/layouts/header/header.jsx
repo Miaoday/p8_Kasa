@@ -1,6 +1,6 @@
 import './header.scss';
 import Logo from '../../assets/images/logo_mobile.png';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Header () {
    return (
@@ -9,10 +9,10 @@ function Header () {
          <img src={Logo} alt="logo-for-mobile-version" />         
             <ul>
                <li> 
-                  <NavLink to="/p8_kasa" /> Accueil
+                  <Link to="/" /> Accueil
                </li>
                <li>
-                  <NavLink to="/about"/> A Propos
+                  <Link to="about"/> A Propos
                </li>
             </ul>
          </nav>

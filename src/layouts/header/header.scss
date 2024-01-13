@@ -14,11 +14,17 @@
 
     ul>li {
       list-style: none;
-      text-decoration-line: underline;
+      
       color: #FF6060;
       font-size: 12px;
       font-weight: 500;
-      line-height: 142.6%; /* 17.112px */      
+      line-height: 142.6%; /* 17.112px */   
+      cursor: pointer;   
+    }
+
+    ul>li:active {
+      text-decoration-line: underline;
+
     }
 }
 

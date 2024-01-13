@@ -8,8 +8,7 @@ function Collection () {
     <section>
       {dataList.map(function(data){
         return(
-          <Card
-          key={data.id} 
+          <Card key={data.id} 
           id={data.id} 
           title={data.title} 
           cover={data.cover} 
