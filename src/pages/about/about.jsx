@@ -8,7 +8,7 @@ function About () {
     <div>
         
         <Banner banner={bannerAbout} />
-        <h1>hi page</h1>
+        <h1>A Propos</h1>
         
     </div>
   )
