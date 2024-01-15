@@ -12,12 +12,7 @@ function About () {
       <div>
       {aboutData.map(function(data){
         return(
-            <Collapse key={data.id}>
-            <h3>title={data.title}</h3>
-            <div>
-              <p>{data.content}</p>
-            </div>
-            </Collapse>
+            <Collapse key={data.id} title={data.title} content={data.content} / >           
         )   
         })} 
       </div> 
