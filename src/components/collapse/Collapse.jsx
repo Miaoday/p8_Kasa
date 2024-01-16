@@ -4,14 +4,12 @@ import arrow from '../../assets/images/arrow_back_ios-24px 2.png';
 
 function Collapse (props) {
   const [itsOpen, setItsOpen] = useState(false);
-
   const handleCollapse = function() {
     setItsOpen(!itsOpen);
   };
 
   const collapseRules = `collapse ${itsOpen && 'content_visible'}`;
-  
-  const handleArrow = `arrow ${itsOpen ? 'arrow_up':'arrow_down'}`;
+  const handleArrow = `arrow ${itsOpen ? 'arrow_down':'arrow_up'}`;
 
   function renderContent () {
     if (Array.isArray(props.content)) {
@@ -24,8 +22,9 @@ function Collapse (props) {
   return (
     <div className={collapseRules}>
       <div onClick={handleCollapse}>
-        <h3>{props.title}</h3>
-        <img className={handleArrow} src={arrow} alt='click_arrow'/> 
+        <h3 className="collapse_title">{props.title}
+          <img className={handleArrow} src={arrow} alt='click_arrow'/>
+        </h3>       
         <div className="collapse_content">
           {itsOpen && renderContent()}
         </div>

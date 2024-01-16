@@ -1,0 +1,37 @@
+@import '../../styles/utils/variable.scss';
+.collapse {
+  &_title{
+    color: $primary-color;
+    font-size: 13px;
+    border-radius: 5px;
+    background: var($secondary-color);
+    padding: 10px 0px 10px 10px;
+    min-width: 335px;
+    width: 85%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_content {
+    background-color: $collapse-text-color;
+  }
+}
+
+.arrow {
+  cursor: pointer;
+  display: flex;
+  width: 32px;
+  height: 32px;
+
+  &_up {
+    transform: rotate(-0deg);
+  }
+
+  &_down {
+    transform: rotate(-180deg);
+  }
+  
+  
+}
