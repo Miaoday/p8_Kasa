@@ -9,7 +9,7 @@ function About () {
   return(
     <div>
       <Banner banner={bannerAbout} />    
-      <div className="collapse">
+      <div className="collapse_section">
       {aboutData.map(function(data){
         return(
             <Collapse key={data.id} title={data.title} content={data.content} / >           

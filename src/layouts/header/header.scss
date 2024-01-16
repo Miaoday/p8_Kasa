@@ -1,3 +1,5 @@
+@import '../../styles/utils/variable.scss';
+
 .header_nav {
     display: flex;
     margin-bottom: 27px;
@@ -14,8 +16,7 @@
 
     ul>li {
       list-style: none;
-      
-      color: #FF6060;
+      color: $secondary-color;
       font-size: 12px;
       font-weight: 500;
       line-height: 142.6%; /* 17.112px */   
@@ -24,7 +25,6 @@
 
     ul>li:active {
       text-decoration-line: underline;
-
     }
 }
 
