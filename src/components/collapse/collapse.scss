@@ -1,4 +1,5 @@
 @import '../../styles/utils/variable.scss';
+@import '../../styles/utils/mixin.scss';
 
 .collapse {
   margin-top: 20px;
@@ -25,27 +26,16 @@
     line-height: 142.6%; /* 17.112px */
     border-radius: 5px;
     min-width: 335px;
-    padding: 13px 20px 19px 20px;
-    
-    min-height: 0;
-    // opacity: 0;
-
+    padding: 13px 20px 19px 20px;  
+    position: relative;
+    top: 0px;
+    transition: padding 10s cubic-bezier(0.88, 0.12, 0.13, 0.92);
   }
 
   &,
   .visible {
     width: 80%;
-    // max-height: 181px;
-    // opacity: 1;
-    // padding-top: 30px;
-    // display: block;
   }
-
-  // &,
-  // .hidden{
-  //   opacity: 0;
-  // }
-
 }
 
 .arrow {
@@ -54,12 +44,14 @@
   width: 32px;
   height: 32px;
   
+  
   &_up {
-    transform: rotate(-0deg);
+    transform: rotate(0deg);
+    
   }
 
   &_down {
-    transform: rotate(-180deg);
+    transform: rotate(180deg);
     margin: 8px;
   }
 }

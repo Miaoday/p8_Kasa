@@ -1,6 +1,7 @@
 import './error.scss';
 
 function Error () {
+  
 
 }
 
