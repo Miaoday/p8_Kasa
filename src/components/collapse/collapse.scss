@@ -29,7 +29,7 @@
     padding: 13px 20px 19px 20px;  
     position: relative;
     top: 0px;
-    transition: padding 10s cubic-bezier(0.88, 0.12, 0.13, 0.92);
+    // transition: padding 10s cubic-bezier(0.88, 0.12, 0.13, 0.92);
   }
 
   &,
@@ -43,7 +43,7 @@
   display: flex;
   width: 32px;
   height: 32px;
-  
+  // transition: all 0.5s ease-in-out; 
   
   &_up {
     transform: rotate(0deg);
