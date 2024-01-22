@@ -1,3 +1,6 @@
+@import '../../styles/utils/mixin.scss';
+
+
 *,
 ::before,
 ::after {
@@ -12,11 +15,23 @@
 }
 
 .main_container {
-  display: flex;
-  min-width: 375px;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  max-width: 1440px;
+  // display: grid;
+  // grid-template-rows: auto 1fr auto;
   margin: 20px;
+
+  @include tablet-large {
+    margin: 45px;
+  }
+
+  // @include desktop-large {
+  //   margin: 45px 360px;
+  // }
+  
+}
+
+.footer_section {
+  background-color: $footer-color;
 }
 
 li {

@@ -1,30 +1,66 @@
-@import '../../styles/utils/variable.scss';
+@import '../../styles/utils/mixin.scss';
 
-.header_nav {
+.navbar {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 27px;
 
-    ul{
-      width: 190px;
-      display: inline-flex;
-      align-items: center;
-      margin: 0;
-      padding: 15px 0;
-      justify-content: flex-end;
-      gap: 26px;
+    @include desktop-medium {
+      margin-bottom: 50px;
     }
 
-    ul>li {
-      list-style: none;
-      color: $secondary-color;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 142.6%; /* 17.112px */   
-      cursor: pointer;   
-    }
+    &_logo {
+      max-width: 210px;
+      width: 29%;
+      height: 100%;
 
-    ul>li:active {
-      text-decoration-line: underline;
+      @include desktop-medium {
+        width: 100%;
+      }
     }
 }
+
+ul{
+  width: 190px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  gap: 26px;
+  color: $secondary-color;
+
+  @include tablet-medium {
+    gap: 40px;
+  }
+
+  @include desktop-medium {
+    width: auto;
+    gap: 57px;
+  }
+
+  li {
+    list-style: none;
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: $font-size-xxs;
+    font-weight: $font-weight-medium;
+    line-height: 142.6%; /* 17.112px */   
+    cursor: pointer;   
+
+    @include tablet-medium {
+      font-size: $font-size-s;
+    }
+
+    @include desktop-medium {
+      font-size: $font-size-m;
+    }
+  }
+
+  .link-active {
+    text-decoration: underline;
+    color: $secondary-color;
+  }
+
+}
+
 

@@ -1,11 +1,16 @@
 @import '../styles/base/base.scss';
+
 @import '../styles/utils/variable.scss';
+@import '../styles/utils/mixin.scss';
+
+
 @import '../pages/home/home.scss';
 @import '../pages/about/about.scss';
+
+
 @import '../layouts/header/header.scss';
 @import '../layouts/footer/footer.scss';
 @import '../components/banner/banner.scss';
 @import '../components/card/card.scss';
 @import '../components/collection/collection.scss';
-@import '../pages/about/about.scss';
 @import '../components/collapse/collapse.scss';

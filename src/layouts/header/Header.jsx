@@ -1,20 +1,25 @@
 import './header.scss';
-import Logo from '../../assets/images/logo_mobile.png';
-import { Link } from "react-router-dom";
+import Logo from '../../assets/images/logo_desktop.png';
+import { NavLink } from "react-router-dom";
 
 function Header () {
   return (
     <header>
-      <nav className='header_nav'>
-        <img src={Logo} alt="logo-for-mobile-version" />         
+      <nav className='navbar'>
+        <img className='navbar_logo' src={Logo} alt="logo-for-mobile-version" />         
           <ul>
             <li> 
-              <Link to="/"> Accueil 
-              </Link>
+              {/* <NavLink to="/"> Accueil 
+              </NavLink> */}
+              <NavLink to="/" className={(nav) => (nav.isActive ? "link-active" : undefined)}> 
+              Accueil 
+              </NavLink>
             </li>
             <li>
-              <Link to="About"> A Propos
-              </Link>
+              {/* <NavLink to="About"> A Propos
+              </NavLink> */}
+              <NavLink to="About"className={(nav) => (nav.isActive ? "link-active" : undefined)} > A Propos
+              </NavLink>
             </li>
           </ul>
       </nav>

@@ -1,0 +1,33 @@
+@import '../../styles/utils/mixin.scss';
+
+.collection {
+    border-radius: 25px;
+    max-width: 1440px;
+    display: grid;
+    // margin: 27px auto;
+
+    
+
+    // @include tablet-medium {
+    //   gap: 60px;
+    // }
+
+    @include desktop-medium {
+      background-color: $text-background-color;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 100%;
+      margin-top: 40px;
+      gap: 0 50px;
+      padding: 30px 50px;
+    }
+
+    @include desktop-large {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      width: 100%;
+      gap: 28px 50px;
+      padding: 34px 50px;
+    }  
+    
+}

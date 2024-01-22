@@ -1,25 +1,64 @@
-@mixin pull-down {
-  animation: descending 0.6s linear forwards;
+@import '../utils/variable.scss';
+
+// Media Queries//
+// breakpoints//
+$breakpoints: (
+  "tablet-up": 500px,
+  "tablet-down": 768px,
+  "desktop-up": 1024px,
+  "desktop-down": 1440px,
+);
+
+@mixin tablet-medium {
+  @media screen and (
+    min-width: map-get($breakpoints, tablet-up)){
+      @content;
+  }
 }
 
-@keyframes go-down {
+@mixin tablet-large {
+  @media screen and (
+    min-width: map-get($breakpoints, tablet-down)){
+      @content;
+  }
+}
+
+@mixin desktop-medium {
+  @media screen and (
+    min-width: map-get($breakpoints, desktop-up)){
+      @content;
+  }
+}
+
+@mixin desktop-large {
+  @media screen and (
+    min-width: map-get($breakpoints, desktop-down)){
+      @content;
+  }
+}
+
+// Mixin to manage Police size
+// animation
+@mixin unroll  {
+  animation: unroll 0.3s linear forwards;
+}
+
+@keyframes unroll {
   0% {
     transform: translateY(-20px);
-  }
-
-  25% {
-    transform: translateY(-15px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  75% {
-    transform: translateY(-5px);
   }
 
   100% {
     transform: translateY(0);
   }
+}
+
+@mixin rotateUp {
+  transition: all 300ms ease-in-out;
+  transform: rotate(0deg)
+}
+
+@mixin rotateDown {
+  transition: all 300ms ease-in-out;
+  transform: rotate(180deg);
 }

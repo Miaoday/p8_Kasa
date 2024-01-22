@@ -19,7 +19,7 @@
   }
 
   &_content {
-    background-color: $collapse-text-color;
+    background-color: $text-background-color;
     color: $secondary-color;
     font-size: 12px;
     font-weight: 400;
@@ -47,11 +47,13 @@
   
   &_up {
     transform: rotate(0deg);
+    // @include rotateUp
     
   }
 
   &_down {
-    transform: rotate(180deg);
     margin: 8px;
+    transform: rotate(180deg);
+    // @include rotateDown
   }
 }

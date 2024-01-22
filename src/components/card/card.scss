@@ -1,26 +1,35 @@
-@import '../../styles/utils/variable.scss';
+@import '../../styles/utils/mixin.scss';
 
 .card {
     min-width: 335px;
-    height: 255px;  
+    min-height: 255px;  
     margin: 22px 0;
     display: grid;
-    align-items: end;
     cursor: pointer;
+    
+    @include tablet-large {
+      min-height: 575px;
+    }
+
+    @include desktop-medium {
+      min-width: 340px;
+      min-height: 340px;
+    }
 
     &_img {
-      width: 89.4%;
+      width: 100%;
       height: 100%;
       border-radius: 10px;
-      object-fit: cover;
       position: relative;
+      // object-fit: contain;
+      // gap: 30px;     
     }
 
     &_txt {
       position: absolute;
       margin: 200px 30px 15px;
       color: $primary-color;
-      font-size: 18px;
+      font-size: $font-size-s;
       line-height: 142.6%; /* 25.668px */
     }
 
