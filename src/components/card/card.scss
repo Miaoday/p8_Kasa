@@ -22,11 +22,17 @@
 
     &_img {
       width: 100%;
-      height: 100%;
-      
-      position: relative;
+      height: 100%;  
+      // position: relative;
       object-fit: cover;     
       border-radius: 10px;
+      min-height: 340px;
+
+      // @include desktop-large {
+      //   min-width: 340px;
+      //   min-height: 340px;
+      // }
+      
       
     }
 

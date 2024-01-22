@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function Header () {
   return (
-    <header>
+    <header className='header_section'>
       <nav className='navbar'>
         <img className='navbar_logo' src={Logo} alt="logo-for-mobile-version" />         
           <ul>

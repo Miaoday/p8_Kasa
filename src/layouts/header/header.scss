@@ -1,5 +1,16 @@
 @import '../../styles/utils/mixin.scss';
 
+.header_section{
+  min-height: 46px;
+  max-height: 68px;
+  height: 75%;
+
+  @include desktop-medium {
+    height: 100%;
+  }
+
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
