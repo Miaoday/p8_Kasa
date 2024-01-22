@@ -6,7 +6,8 @@
 
   &_title{
     color: $primary-color;
-    font-size: 13px;
+    font-size: $font-size-xxs;
+    font-weight: $font-weight-medium;
     border-radius: 5px;
     background: $secondary-color;
     padding: 10px 0px 10px 10px;
@@ -21,11 +22,12 @@
   &_content {
     background-color: $text-background-color;
     color: $secondary-color;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: $font-size-xxxs;
+    font-weight: $font-weight-light;
     line-height: 142.6%; /* 17.112px */
     border-radius: 5px;
     min-width: 335px;
+    width: 85%;
     padding: 13px 20px 19px 20px;  
     position: relative;
     top: 0px;
@@ -34,7 +36,7 @@
 
   &,
   .visible {
-    width: 80%;
+    width: 117.5%;
   }
 }
 

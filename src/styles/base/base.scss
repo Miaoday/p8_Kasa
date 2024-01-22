@@ -16,22 +16,27 @@
 
 .main_container {
   max-width: 1440px;
-  // display: grid;
-  // grid-template-rows: auto 1fr auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   margin: 20px;
 
   @include tablet-large {
     margin: 45px;
   }
 
-  // @include desktop-large {
-  //   margin: 45px 360px;
-  // }
+  @include desktop-large {
+    margin: 45px auto;
+  }
   
 }
 
 .footer_section {
+  max-width: 1440px;
   background-color: $footer-color;
+  
+  @include desktop-large {
+    margin: 45px auto;
+  }
 }
 
 li {

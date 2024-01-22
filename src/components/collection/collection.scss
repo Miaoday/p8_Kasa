@@ -4,18 +4,14 @@
     border-radius: 25px;
     max-width: 1440px;
     display: grid;
-    // margin: 27px auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 
-    
-
-    // @include tablet-medium {
-    //   gap: 60px;
-    // }
-
-    @include desktop-medium {
-      background-color: $text-background-color;
+    @include tablet-large {
+      background-color: $text-background-color;      
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr;
       width: 100%;
       margin-top: 40px;
       gap: 0 50px;
