@@ -1,9 +1,16 @@
 @import '../../styles/utils/mixin.scss';
 
 .banner_section {
-  position: relative;
-  // margin-bottom: 5px;  
+  position: relative;  
   max-height: 223px;
+
+  @include tablet-medium {
+    margin: 12px 0;
+  }
+
+  @include tablet-large {
+    margin: 50px 0 27px 0;
+  }
 }
 
 .banner_img { 

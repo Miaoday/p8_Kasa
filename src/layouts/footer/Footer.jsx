@@ -1,13 +1,14 @@
 import React from 'react';
-import FooterMobile from '../../assets/images/footer_mobile.png';
-import FooterDesktop from '../../assets/images/footer_desktop.png';
+import logo from '../../assets/images/footer_logo.png';
+
 import './footer.scss';
 
 function Footer () {
-  const isMobile = window.innerWidth <= 767;
+  
   return(
-    <footer>
-    <img src={isMobile ? FooterMobile : FooterDesktop} alt='footer-logo'/>
+    <footer className='footer'>
+    <img src={logo} alt='footer-logo' className='footer_img'/>
+    <p className='footer_txt'>© 2020 Kasa. All rights reserved</p>
     </footer>
   )
 }

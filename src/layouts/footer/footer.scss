@@ -1,13 +1,51 @@
 @import '../../styles/utils/mixin.scss';
 
 
-footer {   
+.footer {   
   min-width: 375px;
   max-width: 1440px;
   height: 209px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  padding: 66px 120.313px 58px 121.094px;
+
+  @include desktop-medium  {
+    gap: 28px;
+  }
+
+
+  &_img {
+    min-width: 122px;
+    width: 10%;
+  }
+
+  &_txt {
+    color: $primary-color;
+    min-height: 46px;
+    display: flex;  
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    font-size: $font-size-xxs;
+    font-weight: $font-weight-medium;
+    line-height: 142.6%; /* 17.112px */
+
+    @include tablet-medium {
+      font-size: $font-size-xs;
+    }
+
+    @include tablet-large {
+      font-size: $font-size-s;
+    }
+
+    @include desktop-medium  {
+      font-size: $font-size-m;
+    }
+
+
+  }
 }
