@@ -1,0 +1,34 @@
+@import '../../styles/utils/mixin.scss';
+
+.slides_box {
+  min-width: 335px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+
+  &_picture {
+    width: 100%;
+  }
+}
+
+.arrow_right {
+  border: 0;
+  position: absolute;
+  top: 70px;
+  right: 5px;
+}
+
+.arrow_left {
+  border: 0;
+  position: absolute;
+  top: 70px;
+  left: 5px;
+}
+
+.counter {
+  color: $primary-color;
+  position: absolute;
+  top: 265px;
+  right: 225px;
+}

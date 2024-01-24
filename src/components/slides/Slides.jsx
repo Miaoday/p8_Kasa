@@ -20,10 +20,10 @@ const prevSlide = () => {
 
       {slideLength >1 &&
       <div>
-        <button>
+        <button className='arrow_right'>
           <img src={arrowRight} alt='next_one' onClick={nextSlide} className='arrow_right'/>
         </button>
-        <button>
+        <button className='arrow_left'>
           <img src={arrowLeft} alt='previous_one' onClick={prevSlide} className='arrow_left' /> 
         </button>
         
