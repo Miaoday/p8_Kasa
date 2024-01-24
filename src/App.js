@@ -7,7 +7,7 @@ import Header from './layouts/header/Header.jsx';
 import Footer from './layouts/footer/Footer.jsx';
 import Home from './pages/home/Home.jsx';
 import About from './pages/about/About.jsx';
-import Logement from './pages/appartements/Appartement.jsx';
+import Appartement from './pages/appartements/Appartement.jsx';
 import Error from './pages/error/Error.jsx';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />           
             <Route path="about" element={<About />} />  
-            <Route path="/appartements/:id" element={<Logement/>} />
+            <Route path="/appartements/:id" element={<Appartement/>} />
             <Route path="*" element={<Error />} />
           </Routes>      
         </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import '../collapse/collapse.scss';
-import arrow from '../../assets/images/arrow_back_ios-24px 2.png';
+import arrow from '../../assets/images/arrow_up_ios-24px.png';
 
 function Collapse (props) {
   const [isOpen, setIsOpen] = useState(false);
