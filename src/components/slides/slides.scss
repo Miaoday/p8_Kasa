@@ -2,6 +2,8 @@
 
 .slides_box {
   min-width: 335px;
+  max-width: 1240px;
+  height: 255px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,26 +11,41 @@
 
   &_picture {
     width: 100%;
+    height: 100%;  
+    object-fit: cover;
+    border-radius: 10px;
   }
 }
 
-.arrow_right {
-  border: 0;
+.arrow {
   position: absolute;
-  top: 70px;
-  right: 5px;
-}
+  width: 100%;
 
-.arrow_left {
-  border: 0;
-  position: absolute;
-  top: 70px;
-  left: 5px;
+  &_btn{
+    border: 0;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    max-width: 48px;
+  }
+
+  &_right {
+    position: absolute;
+    right: 3%;
+  }
+  &_left {
+    position: absolute;
+    left: 3%;
+  }
 }
 
 .counter {
   color: $primary-color;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   position: absolute;
-  top: 265px;
-  right: 225px;
+  bottom: 30px;
 }

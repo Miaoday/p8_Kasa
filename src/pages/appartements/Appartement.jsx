@@ -18,6 +18,9 @@ function Appartement () {
       <section>
         <div>
           <Carrousel pictures={logementId.pictures} />
+          <div>
+            {}
+          </div>
         </div>
         
       </section>
