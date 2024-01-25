@@ -19,12 +19,12 @@ const prevSlide = () => {
       <img src={pictures[currentIndex]} alt={title} className='slides_box_picture'/>
 
       {slideLength >1 &&
-      <div className='arrow'>
+      <div className='arrow_box'>
         <button className='arrow_btn'>
-          <img src={arrowRight} alt='next_one' onClick={nextSlide} className='arrow_right'/>
+          <img src={arrowRight} alt='next_one' onClick={nextSlide} className='arrow_btn_right'/>
         </button>
         <button className='arrow_btn'>
-          <img src={arrowLeft} alt='previous_one' onClick={prevSlide} className='arrow_left' /> 
+          <img src={arrowLeft} alt='previous_one' onClick={prevSlide} className='arrow_btn_left' /> 
         </button>       
       </div>     
       }   

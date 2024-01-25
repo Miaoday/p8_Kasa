@@ -2,24 +2,24 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import data from '../../components/data/appartements.json';
 import Error from '../../pages/error/Error';
-import Carrousel from '../../components/slides/Slides';
+import Slides from '../../components/slides/Slides';
 import '../appartements/appartement.scss';
 
 function Appartement () {
 
   const { id } = useParams();
-  const logementId = data.find(appartements=> appartements.id ===id);
+  const logement = data.find(appartements=> appartements.id ===id);
 
-    if (!logementId) {
+    if (!logement) {
       return (<Error/>)
     }
 
     return (
       <section>
         <div>
-          <Carrousel pictures={logementId.pictures} />
+          <Slides pictures={logement.pictures} title={logement.title} />
           <div>
-            {}
+            
           </div>
         </div>
         

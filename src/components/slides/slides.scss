@@ -17,18 +17,18 @@
   }
 }
 
-.arrow {
+.arrow_box {
   position: absolute;
   width: 100%;
+}
 
-  &_btn{
-    border: 0;
-    background: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    max-width: 48px;
-  }
+.arrow_btn{
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  max-width: 48px;
 
   &_right {
     position: absolute;
