@@ -19,7 +19,12 @@ function Appartement () {
         <div>
           <Slides pictures={logement.pictures} title={logement.title} />
           <div>
-            
+            <h4>{logement.title}</h4>
+            <p>{logement.location}</p>       
+            {logement.tags.map((tags)=>{return(<span key={id}>{tags}</span>)})}     
+          </div>
+          <div>
+
           </div>
         </div>
         
