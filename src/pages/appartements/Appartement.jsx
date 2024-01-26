@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import data from '../../components/data/appartements.json';
 import Error from '../../pages/error/Error';
 import Slides from '../../components/slides/Slides';
+import Rate from '../../components/rate/Rate';
 import '../appartements/appartement.scss';
 
 function Appartement () {
@@ -24,6 +25,7 @@ function Appartement () {
             {logement.tags.map((tags)=>{return(<span key={id}>{tags}</span>)})}     
           </div>
           <div>
+            <Rate value={parseInt(logement.rating)} maxStars={5}/>
 
           </div>
         </div>

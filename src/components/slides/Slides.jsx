@@ -12,7 +12,7 @@ const nextSlide = () => {
   setCurrentIndex((currentIndex)=>(currentIndex+1) % slideLength);
 };
 const prevSlide = () => {
-  setCurrentIndex((currentIndex)=>(currentIndex-1) % slideLength);
+  setCurrentIndex((currentIndex)=>(currentIndex-1+slideLength) % slideLength);
 };
   return (
     <div className='slides_box'>
