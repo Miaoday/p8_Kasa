@@ -1,9 +1,9 @@
 import React from "react";
 import starGrey from '../../assets/images/Grey_star.png';
 import starRed from '../../assets/images/Red_star.png';
-import '../rate/rate.scss';
+import './rating.scss';
 
-function Rate ({rating}) {
+function Rating ({rating}) {
   const starLength = 5;
   const stars =[];
 
@@ -21,4 +21,4 @@ function Rate ({rating}) {
   );
 };
 
-export default Rate
+export default Rating

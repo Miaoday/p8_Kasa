@@ -31,7 +31,7 @@
     padding: 13px 20px 19px 20px;  
     position: relative;
     top: 0px;
-    // transition: padding 10s cubic-bezier(0.88, 0.12, 0.13, 0.92);
+    @include unroll
   }
 
   &,
@@ -45,17 +45,14 @@
   display: flex;
   width: 32px;
   height: 32px;
-  // transition: all 0.5s ease-in-out; 
+  transition: all 800ms ease-in-out; 
   
   &_up {
-    transform: rotate(0deg);
-    // @include rotateUp
-    
+    transform: rotate(0deg);    
   }
 
   &_down {
     margin: 8px;
     transform: rotate(180deg);
-    // @include rotateDown
   }
 }

@@ -40,12 +40,12 @@ $breakpoints: (
 // Mixin to manage Police size
 // animation
 @mixin unroll  {
-  animation: unroll 0.3s linear forwards;
+  animation: unroll 0.5s linear forwards;
 }
 
 @keyframes unroll {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(-50px);
   }
 
   100% {
