@@ -5,20 +5,20 @@ import '../slides/slides.scss';
 
 function Slides ({ title, pictures}) {
 const [currentIndex, setCurrentIndex]= useState(0);
-const slideLength = pictures.length;
-const counter = `${currentIndex +1}/ ${slideLength}`;
+const slidesLength = pictures.length;
+const counter = `${currentIndex +1}/ ${slidesLength}`;
 
 const nextSlide = () => {
-  setCurrentIndex((currentIndex)=>(currentIndex+1) % slideLength);
+  setCurrentIndex((currentIndex)=>(currentIndex+1) % slidesLength);
 };
 const prevSlide = () => {
-  setCurrentIndex((currentIndex)=>(currentIndex-1+slideLength) % slideLength);
+  setCurrentIndex((currentIndex)=>(currentIndex-1+slidesLength) % slidesLength);
 };
   return (
     <div className='slides_box'>
       <img src={pictures[currentIndex]} alt={title} className='slides_box_picture'/>
 
-      {slideLength >1 &&
+      {slidesLength >1 &&
       <div className='arrow_box'>
         <button className='arrow_btn'>
           <img src={arrowRight} alt='next_one' onClick={nextSlide} className='arrow_btn_right'/>
@@ -28,7 +28,7 @@ const prevSlide = () => {
         </button>       
       </div>     
       }   
-      {slideLength >1 &&
+      {slidesLength >1 &&
       <div className='counter'>{counter}</div> 
       } 
     </div>
