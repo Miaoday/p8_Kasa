@@ -24,7 +24,7 @@ const prevSlide = () => {
           <img src={arrowRight} alt='next_one' onClick={nextSlide} className='arrow_btn_right'/>
         </button>
         <button className='arrow_btn'>
-          <img src={arrowLeft} alt='previous_one' onClick={prevSlide} className='arrow_btn_left' /> 
+          <img src={arrowLeft} alt='previous_one' onClick={prevSlide} className='arrow_btn_left'/> 
         </button>       
       </div>     
       }   

@@ -3,9 +3,9 @@ import { useParams } from "react-router-dom";
 import data from '../../components/data/appartements.json';
 import Error from '../../pages/error/Error';
 import Slides from '../../components/slides/Slides';
-import Rate from '../../components/rating/Rating';
-import '../appartements/appartement.scss';
+import Rating from '../../components/rating/Rating';
 import Collapse from "../../components/collapse/Collapse";
+import '../appartements/appartement.scss';
 
 function Appartement () {
   const { id } = useParams();
@@ -13,23 +13,25 @@ function Appartement () {
   if (!flat) {return (<Error/>)}
 
   return (
-    <section>
-      <div>
+    <section className="flat">
+      <div className="flat_slides">
         <Slides pictures={flat.pictures} title={flat.title} />
-        <div>
-          <h4>{flat.title}</h4>
-          <p>{flat.location}</p>       
-          {flat.tags.map((tags,index)=>{
-            return(
-              <span key={index}>{tags}</span>
-            )})
-          }     
+        <div className="flat_name">
+          <h4 className="flat_title">{flat.title}</h4>
+          <p className="flat_subtitle">{flat.location}</p>  
+          <div className="flat_tagsBox">
+            {flat.tags.map((tags,index)=>{
+              return(
+                <span className="flat_tag" key={index}>{tags}</span>
+              )})
+            }   
+          </div>                 
         </div>
-        <div>
-          <Rate rating={flat.rating}/>
-          <div>
-            <p>{flat.host.name}</p>
-            <img src={flat.host.picture} alt={flat.host.name}/>
+        <div className="flat_profile">
+          <Rating rating={flat.rating}/>
+          <div className="flat_host">
+            <p className="flat_host_name">{flat.host.name}</p>
+            <img className="flat_host_photo" src={flat.host.picture} alt={flat.host.name}/>
           </div>          
         </div>
       </div>

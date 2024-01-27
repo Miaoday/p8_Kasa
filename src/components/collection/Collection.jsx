@@ -17,17 +17,5 @@ function Collection () {
     </div>
   )   
 }
-// function Collection() {
-//   return (
-//     <div className='collection'>
-//       {dataList.map(data => (
-//         <Link key={data.id} to={`/appartements/${data.id}`}>
-//           <Card key={data.id} id={data.id} title={data.title} cover={data.cover} />
-//         </Link>
-//       ))}
-//     </div>
-//   );
-// }
-
 
 export default Collection

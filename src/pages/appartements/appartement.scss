@@ -1,0 +1,73 @@
+@import '../../styles/utils/mixin.scss';
+
+.flat {
+  &_title {
+    color: $secondary-color;
+    font-size: $font-size-s;
+    font-weight: $font-weight-medium;
+    line-height: 142.6%; /* 25.668px */
+  }
+  &_name {
+    margin: 8px 0;
+  }
+
+  &_subtitle {
+    color: $secondary-color;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-medium;
+    line-height: 142.6%; /* 25.668px */
+    margin: 5px 0;
+  }
+
+  &_tagsBox{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+  }
+
+  &_tag{
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-size: 10px;
+    width: 84px;
+    height: 18px; 
+    border-radius: 5px;
+    padding: 2px 0px;
+    text-align: center;
+  }
+
+  &_profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &_host{
+    width: 135px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+
+    &_name {
+      width: 82px;
+      height: 33px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: $secondary-color;
+      font-size: $font-size-xxxs;
+      font-weight: $font-weight-medium;
+      line-height: 142.6%;
+      text-align: right;
+    }
+
+    &_photo {
+      width: 32px;
+      height: 32px;
+      border-radius: 100px;
+    }
+  }
+  
+}
