@@ -16,9 +16,11 @@ function Appartement () {
     <section className="flat">
       <div className="flat_slides">
         <Slides pictures={flat.pictures} title={flat.title} />
-        <div className="flat_name">
+      </div>
+      <div className="flat_content">
+          <div className="flat_description">
           <h4 className="flat_title">{flat.title}</h4>
-          <p className="flat_subtitle">{flat.location}</p>  
+          <p className="flat_location">{flat.location}</p>  
           <div className="flat_tagsBox">
             {flat.tags.map((tags,index)=>{
               return(
@@ -26,15 +28,15 @@ function Appartement () {
               )})
             }   
           </div>                 
-        </div>
-        <div className="flat_profile">
+          </div>
+          <div className="flat_profile">
           <Rating rating={flat.rating}/>
           <div className="flat_host">
             <p className="flat_host_name">{flat.host.name}</p>
             <img className="flat_host_photo" src={flat.host.picture} alt={flat.host.name}/>
           </div>          
-        </div>
-      </div>
+          </div>
+      </div>      
       <div>
         <Collapse title="Description" content={flat.description} />
         <Collapse title="Équipements" content={flat.equipments} />

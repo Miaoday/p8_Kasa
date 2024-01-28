@@ -1,22 +1,52 @@
 @import '../../styles/utils/mixin.scss';
 
 .flat {
+  margin-bottom: 7px;
+
+  
+
+  &_content {
+    @include tablet-medium {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+    
+  }
+    
+  }
+
+  &_description {
+    margin: 8px 0;
+  }
+
   &_title {
     color: $secondary-color;
     font-size: $font-size-s;
     font-weight: $font-weight-medium;
     line-height: 142.6%; /* 25.668px */
-  }
-  &_name {
-    margin: 8px 0;
-  }
+    margin-top: 15px;
+    
+    @include tablet-medium {
+      font-size: $font-size-s;
 
-  &_subtitle {
+    }
+
+    @include tablet-large {
+      font-size: $font-size-m;
+    }
+  }
+  
+  &_location {
     color: $secondary-color;
     font-size: $font-size-xs;
     font-weight: $font-weight-medium;
     line-height: 142.6%; /* 25.668px */
-    margin: 5px 0;
+    margin: 8px 0;
+
+    @include tablet-medium {
+      font-size: $font-size-s;
+    }
   }
 
   &_tagsBox{
@@ -40,6 +70,13 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @include tablet-medium {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+      margin: 8px 20px;
+    }
   }
 
   &_host{
@@ -49,6 +86,10 @@
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
+
+    @include tablet-medium {
+      margin: 15px 0;
+    }
 
     &_name {
       width: 82px;
@@ -61,12 +102,27 @@
       font-weight: $font-weight-medium;
       line-height: 142.6%;
       text-align: right;
+
+      @include tablet-medium {
+        font-size: $font-size-s;
+        margin: 20px 0;
+      }
     }
 
     &_photo {
       width: 32px;
       height: 32px;
       border-radius: 100px;
+
+      @include tablet-medium {
+        width: 48px;
+        height: 48px;
+      }
+
+      @include tablet-large {
+        width: 64px;
+        height: 64px;
+      }
     }
   }
   

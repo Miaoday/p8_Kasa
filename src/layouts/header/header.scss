@@ -1,33 +1,30 @@
 @import '../../styles/utils/mixin.scss';
 
 .header_section{
-  min-height: 46px;
+  // min-height: 46px;
   max-height: 68px;
-  height: 75%;
+  height: 80%;
+  margin-bottom: 27px;
 
   @include desktop-medium {
     height: 100%;
+    margin-bottom: 45px;
   }
-
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 27px;
+    // margin-bottom: 27px;
 
     @include desktop-medium {
       margin-bottom: 50px;
     }
 
     &_logo {
+      min-width: 145px;
       max-width: 210px;
-      width: 29%;
-      height: 100%;
-
-      @include desktop-medium {
-        width: 100%;
-      }
+      width: 20%;
     }
 }
 

@@ -13,21 +13,26 @@
   font-style: normal;
 }
 
+body {
+  min-width: 300px;
+  margin: 0 ;
+  padding: 0;
+
+}
 .main_container {
   min-width: 300px;
-  max-width: 1440px;
   display: grid;
   grid-template-rows: auto 1fr auto;
   margin: 20px;
 
-  @include tablet-large {
+  @include desktop-medium {
     margin: 45px;
   }
 
-  @include desktop-large {
-    margin: 50px auto;
-    padding: 0 50px;
-  }
+  // @include desktop-large {
+  //   margin: 50px auto;
+  //   padding: 0 50px;
+  // }
   
 }
 
