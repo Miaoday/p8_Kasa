@@ -125,5 +125,19 @@
       }
     }
   }
-  
+
+  // &_collapse {
+  //   @include desktop-large {
+  //     display: grid;
+  //     grid-template-columns: 1fr 1fr;
+  //     gap: 60px;
+  //   }       
+  // }
+
+  // &_details {
+    // @include desktop-medium {
+  //   max-width: 582px;
+  //   width: 100%;
+    // }
+  // }
 }
