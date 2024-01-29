@@ -20,7 +20,7 @@
       height: 100%;  
       object-fit: cover;     
       border-radius: 10px;
-      background: linear-gradient(180deg, rgba(255, 255, 255) 0%, rgba(0, 0, 0) 100%);
+      background: linear-gradient(180deg, rgba(255, 255, 255) 0%, rgba(0, 0, 0, 1) 100%);
     }
 
     &_txt {
@@ -30,7 +30,7 @@
       color: $primary-color;
       font-size: $font-size-s;
       line-height: 142.6%; /* 25.668px */
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+      // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
     }
 
 }

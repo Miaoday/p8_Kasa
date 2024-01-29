@@ -3,7 +3,6 @@
 
 .footer {   
   min-width: 375px;
-  max-width: 1440px;
   height: 209px;
   width: 100%;
   display: flex;
@@ -45,7 +44,5 @@
     @include desktop-medium  {
       font-size: $font-size-m;
     }
-
-
   }
 }

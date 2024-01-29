@@ -12,36 +12,34 @@
   font-family: 'Montserrat';
   font-style: normal;
 }
+#root {
+  margin: 0 auto;
+}
 
 body {
   min-width: 300px;
   margin: 0 ;
   padding: 0;
-
 }
+
 .main_container {
   min-width: 300px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  margin: 20px;
+  padding: 20px 5%;
 
   @include desktop-medium {
     margin: 45px;
-  }
+    padding: 0px 0;
 
-  // @include desktop-large {
-  //   margin: 50px auto;
-  //   padding: 0 50px;
-  // }
-  
+  }
 }
 
 .footer_section {
-  max-width: 1440px;
   background-color: $footer-color;
   
   @include desktop-large {
-    margin: 45px auto;
+    margin: 0 auto;
   }
 }
 
