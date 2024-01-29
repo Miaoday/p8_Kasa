@@ -3,7 +3,7 @@
 .card {
     min-width: 335px;
     min-height: 255px;  
-    margin: 22px 0;
+    margin: 15px 0;
     display: grid;
     align-items: end;
     border-radius: 10px;
@@ -30,7 +30,6 @@
       color: $primary-color;
       font-size: $font-size-s;
       line-height: 142.6%; /* 25.668px */
-      // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
     }
 
 }

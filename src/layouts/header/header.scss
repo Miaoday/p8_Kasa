@@ -1,7 +1,6 @@
 @import '../../styles/utils/mixin.scss';
 
 .header_section{
-  // min-height: 46px;
   max-height: 68px;
   height: 80%;
   margin-bottom: 27px;
@@ -12,23 +11,22 @@
   }
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    // margin-bottom: 27px;
+.navBar {
+  display: flex;
+  justify-content: space-between;
 
-    @include desktop-medium {
-      margin-bottom: 50px;
-    }
+  @include desktop-medium {
+    margin-bottom: 50px;
+  }
 
-    &_logo {
-      min-width: 145px;
-      max-width: 210px;
-      width: 20%;
-    }
+  &_logo {
+    min-width: 145px;
+    max-width: 210px;
+    width: 20%;
+  }
 }
 
-ul{
+.navLink {
   width: 190px;
   display: inline-flex;
   align-items: center;
@@ -46,25 +44,29 @@ ul{
     gap: 57px;
   }
 
-  li {
+  &_content {
     list-style: none;
-    text-decoration: none;
-    color: $secondary-color;
-    font-size: $font-size-xxxs;
-    font-weight: $font-weight-medium;
-    line-height: 142.6%; /* 17.112px */   
-    cursor: pointer;   
 
-    @include tablet-medium {
+    &_home,
+    &_about {
+      text-decoration: none;
+      color: $secondary-color;
+      font-size: $font-size-xxxs;
+      font-weight: $font-weight-medium;
+      line-height: 142.6%; /* 17.112px */   
+      cursor: pointer;   
+
+      @include tablet-medium {
       font-size: $font-size-s;
-    }
+      }
 
-    @include desktop-medium {
+      @include desktop-medium {
       font-size: $font-size-m;
+      }
     }
   }
 
-  .link-active {
+  .active {
     text-decoration: underline;
     color: $secondary-color;
   }

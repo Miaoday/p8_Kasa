@@ -6,7 +6,7 @@ import './banner.scss';
 function Banner ({banner, text}) {
   
   return (
-    <div className='banner_section'>
+    <div className='banner'>
       <img className='banner_img' src={banner} alt='banner-img-mobile-version'/>
       {text? <h2 className='banner_text'>{text}</h2> : null}      
     </div>

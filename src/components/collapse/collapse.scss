@@ -11,15 +11,18 @@
     background: $secondary-color;
     padding: 10px 0px 10px 10px;
     min-width: 335px;
-    max-height: 32px;
+    max-height: 30px;
     width: 85%;
-    // height: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @include desktop-medium {
+    @include tablet-medium {
       font-size: $font-size-s;
+      max-height: 32px;
+    }
+    @include desktop-medium {
+      font-size: $font-size-m;
     }
   }
 
@@ -35,7 +38,11 @@
     padding: 13px 20px 19px 20px;  
     position: relative;
     top: 0px;
-    @include unroll
+    @include unroll;
+    @include tablet-medium {
+      font-size: $font-size-s
+    }
+
   }
 
   &,
