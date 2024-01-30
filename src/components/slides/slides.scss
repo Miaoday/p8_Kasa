@@ -42,9 +42,14 @@
 .counter {
   color: $primary-color;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  position: absolute;
-  bottom: 30px;
+  display: none;
+
+  @include tablet-medium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 30px;
+  }
+  
 }
