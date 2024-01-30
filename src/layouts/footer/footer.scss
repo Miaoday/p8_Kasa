@@ -12,6 +12,7 @@
 
   @include desktop-medium  {
     gap: 28px;
+    
   }
 
 
@@ -42,6 +43,7 @@
 
     @include desktop-medium  {
       font-size: $font-size-m;
+      
     }
   }
 }

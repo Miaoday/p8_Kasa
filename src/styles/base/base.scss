@@ -37,9 +37,11 @@ body {
 
 .footer_section {
   background-color: $footer-color;
+  margin-top: 8px;
   
   @include desktop-large {
     margin: 0 auto;
+    margin-top: 30px;
   }
 }
 

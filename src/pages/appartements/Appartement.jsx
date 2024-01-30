@@ -40,8 +40,8 @@ function Appartement () {
       <div className="flat_collapse">
         {/* <div className="flat_details"> */}
           <Collapse title="Description" content={flat.description} />
-        {/* </div> */}
-        {/* <div className="flat_details"> */}
+        {/* </div>
+        <div className="flat_details"> */}
           <Collapse title="Équipements" content={flat.equipments} />
         {/* </div> */}
       </div>

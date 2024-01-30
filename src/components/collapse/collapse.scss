@@ -49,21 +49,19 @@
 
     @include tablet-medium {
       font-size: $font-size-s;
-      height: 100%;
-      // max-height: 182px;
-      // height: 100%;
     }
-
   }
 
   &,
   .visible {
     width: 117.5%;
     letter-spacing: 1px;
-    // font-weight: 100;
+  
   }
 }
-
+// .flat_page{
+//   height: 290px;
+// }
 .arrow {
   cursor: pointer;
   display: flex;
