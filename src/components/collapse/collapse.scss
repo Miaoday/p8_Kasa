@@ -1,7 +1,11 @@
 @import '../../styles/utils/mixin.scss';
 
 .collapse {
-  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @include desktop-medium {
+    margin-bottom: 30px;
+  }
 
   &_title{
     color: $primary-color;
@@ -9,7 +13,7 @@
     font-weight: $font-weight-medium;
     border-radius: 5px;
     background: $secondary-color;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 15px;
     min-width: 335px;
     max-height: 30px;
     width: 85%;
@@ -20,9 +24,11 @@
     @include tablet-medium {
       font-size: $font-size-s;
       max-height: 32px;
+      padding: 10px 20px;
     }
     @include desktop-medium {
       font-size: $font-size-m;
+      padding: 10px 20px;
     }
   }
 
@@ -30,17 +36,22 @@
     background-color: $text-background-color;
     color: $secondary-color;
     font-size: $font-size-xxxs;
-    font-weight: $font-weight-light;
+    font-weight: 100;
     line-height: 142.6%; /* 17.112px */
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     min-width: 335px;
     width: 85%;
-    padding: 13px 20px 19px 20px;  
+    padding: 23px 20px 19px 20px;  
     position: relative;
-    top: 0px;
+    top: -5px;
+    z-index: -2;
     @include unroll;
+
     @include tablet-medium {
-      font-size: $font-size-s
+      font-size: $font-size-s;
+      height: 100%;
+      // max-height: 182px;
+      // height: 100%;
     }
 
   }
@@ -48,6 +59,8 @@
   &,
   .visible {
     width: 117.5%;
+    letter-spacing: 1px;
+    // font-weight: 100;
   }
 }
 

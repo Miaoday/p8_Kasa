@@ -1,4 +1,12 @@
+@import '../../styles/utils/mixin.scss';
+
 .collapse_section {
   display: flex;
   flex-direction: column;
+
+  @include desktop-large {
+    max-width: 1400px;
+    margin: auto;
+  }
+  
 }
