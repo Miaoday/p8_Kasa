@@ -37,13 +37,9 @@ function Appartement () {
           </div>          
           </div>
       </div>      
-      <div className="flat_collapse">
-        {/* <div className="flat_details"> */}
-          <Collapse title="Description" content={flat.description} />
-        {/* </div>
-        <div className="flat_details"> */}
-          <Collapse title="Équipements" content={flat.equipments} />
-        {/* </div> */}
+      <div className="flat_collapse">   
+          <Collapse contentClass="flat_collapse_txt" title="Description" content={flat.description} />    
+          <Collapse contentClass="flat_collapse_txt" title="Équipements" content={flat.equipments} />    
       </div>
     </section>
   )

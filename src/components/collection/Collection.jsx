@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Card from '../card/Card.jsx';
 import dataList from '../data/appartements.json';
+import Card from '../card/Card.jsx';
 import '../collection/collection.scss';
 
 function Collection () {

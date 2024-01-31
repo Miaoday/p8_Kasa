@@ -50,6 +50,7 @@
     @include tablet-medium {
       font-size: $font-size-s;
     }
+    
   }
 
   &,
@@ -59,9 +60,7 @@
   
   }
 }
-// .flat_page{
-//   height: 290px;
-// }
+
 .arrow {
   cursor: pointer;
   display: flex;

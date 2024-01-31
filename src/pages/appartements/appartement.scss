@@ -1,9 +1,7 @@
 @import '../../styles/utils/mixin.scss';
 
 .flat {
-  margin-bottom: 7px;
-
-  
+  margin-bottom: 7px; 
 
   &_content {
     @include tablet-medium {
@@ -31,7 +29,6 @@
     @include desktop-medium{
       font-size: $font-size-l;
     }
-
   }
   
   &_location {
@@ -48,22 +45,20 @@
 
   &_tagsBox{
     display: flex;
-    // grid-template-columns: auto auto auto;
     gap: 10px;
-    // width: 300px;
 
     @include tablet-medium {
       margin: 16px 0;
     }
   }
 
-  &_tag{
+  &_tag {
     background-color: $secondary-color;
     color: $primary-color;
     font-size: 10px;
     min-width: 84px;
     height: 20px; 
-    padding: 3px 3px;
+    padding: 4px 12px;
     border-radius: 10px;   
     text-align: center;
 
@@ -141,14 +136,14 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 50px;
+
+      &_txt {
+        @include desktop-medium {
+          min-height: 280px;
+        }
+
+      }
     }       
   }
-  // &_details {
-  //   @include tablet-medium {
-  //     height: 292px;
-  //     background-color: $text-background-color;
-  //     position: relative;
-  //     z-index: -10;
-  //   }
-  // }
+
 }

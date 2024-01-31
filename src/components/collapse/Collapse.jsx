@@ -18,8 +18,8 @@ function Collapse (props) {
           <img className={handleArrow} src={arrow} alt='click_arrow'/>
         </h3>   
         {isOpen && (
-          <div className="collapse_content">
-            {Array.isArray(props.content) ? props.content.map((item, index) => <p key={index}>{item}</p> ) : props.content}
+          <div className={`collapse_content ${props.contentClass || ''}`}>
+            {Array.isArray(props.content) ? props.content.map((item, index) => <p className="collapse_items" key={index}>{item}</p> ) : props.content}
           </div>
         )}           
       </div>
