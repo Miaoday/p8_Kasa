@@ -30,7 +30,7 @@ function Appartement () {
           </div>                 
           </div>
           <div className="flat_profile">
-          <Rating rating={flat.rating}/>
+            <Rating rating={flat.rating}/>
           <div className="flat_host">
             <p className="flat_host_name">{flat.host.name}</p>
             <img className="flat_host_photo" src={flat.host.picture} alt={flat.host.name}/>
@@ -44,5 +44,4 @@ function Appartement () {
     </section>
   )
 }
-
 export default Appartement 

@@ -13,12 +13,11 @@ function Rating ({rating}) {
       key={i} 
       src={i<= rating? starRed:starGrey}
       alt="Rating_Stars"
-      ></img>
+      />
     )
   }
   return (
     <div className="stars">{stars}</div>
   );
 };
-
 export default Rating

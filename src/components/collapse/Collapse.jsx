@@ -26,5 +26,4 @@ function Collapse (props) {
     </div>
   );
 }
-
 export default Collapse

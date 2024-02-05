@@ -10,10 +10,10 @@ function About () {
     <div>
       <Banner banner={bannerAbout} />    
       <div className="collapse_section">
-      {aboutData.map(function(data){
-        return(
+        {aboutData.map(function(data){
+          return(
             <Collapse key={data.id} title={data.title} content={data.content} / >           
-        )   
+          )   
         })} 
       </div> 
     </div>                    

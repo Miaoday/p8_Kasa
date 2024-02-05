@@ -28,11 +28,11 @@ const prevSlide = () => {
         </button>       
       </div>     
       }   
+
       {slidesLength >1 &&
       <div className='counter'>{counter}</div> 
       } 
     </div>
   )
 }
-
 export default Slides

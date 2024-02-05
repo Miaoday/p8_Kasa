@@ -50,14 +50,12 @@
     @include tablet-medium {
       font-size: $font-size-s;
     }
-    
   }
 
   &,
   .visible {
     width: 117.5%;
-    letter-spacing: 1px;
-  
+    letter-spacing: 1px; 
   }
 }
 

@@ -9,5 +9,4 @@ function Card ({cover, title}) {
     </div>
   )
 }
-
 export default Card

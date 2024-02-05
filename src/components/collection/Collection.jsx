@@ -17,5 +17,4 @@ function Collection () {
     </div>
   )   
 }
-
 export default Collection

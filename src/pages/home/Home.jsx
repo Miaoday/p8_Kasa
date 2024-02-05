@@ -8,11 +8,9 @@ function Home () {
 
   return(
     <section >
-    <Banner banner={bannerHome} text={bannerHomeTxt} />
-    <Collection />
+      <Banner banner={bannerHome} text={bannerHomeTxt} />
+      <Collection />
     </section>
-
   )
 }
-
 export default Home
